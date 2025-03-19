@@ -42,7 +42,7 @@ public class PlayerDataManager {
     }
 
     public static void setLastLocation(String playerName, Pos pos) {
-        db.rowOf(playerName).value("x", pos.x()).value("y", pos.y()).value("z", pos.z()).value("yaw", pos.yaw()).value("pitch", pos.pitch()).insert();
+        db.update(playerName).value("x", pos.x()).value("y", pos.y()).value("z", pos.z()).value("yaw", pos.yaw()).value("pitch", pos.pitch()).apply();
     }
 
     public static GameMode lastGamemode(String playerName) {
@@ -58,6 +58,6 @@ public class PlayerDataManager {
     }
 
     public static void lastGamemode(String playerName, GameMode gamemode) {
-        db.rowOf(playerName).value("gamemode", gamemode.ordinal()).insert();
+        db.update(playerName).value("gamemode", gamemode.ordinal()).apply();
     }
 }

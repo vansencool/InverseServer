@@ -1,6 +1,5 @@
 package net.vansen.commands.staff.utils;
 
-import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.command.builder.Command;
@@ -15,17 +14,13 @@ public class PlayerListCommand extends Command {
         var pageArg = ArgumentType.Integer("page").setDefaultValue(1);
 
         addSyntax((sender, context) -> {
-            int page = context.get("page") == null ? 1 : Integer.parseInt(context.get("page"));
-            int pageSize = 10;
-            int start = (page - 1) * pageSize;
-            int end = start + pageSize;
-            int totalPages = (int) Math.ceil((double) MinecraftServer.getConnectionManager().getOnlinePlayers().size() / pageSize);
+            int page = context.get("page");
+            int start = (page - 1) * 10;
+            int end = start + 10;
+            int totalPages = (int) Math.ceil((double) MinecraftServer.getConnectionManager().getOnlinePlayers().size() / 10);
 
-            Component header = MiniMessage.miniMessage().deserialize("<#8cb8ff>Online Players (<white>" + MinecraftServer.getConnectionManager().getOnlinePlayers().size() + "<#8cb8ff> players, <white>" + totalPages + "<#8cb8ff> pages)");
-            sender.sendMessage(header);
-
-            Component pagination = MiniMessage.miniMessage().deserialize("<#8cb8ff>Page <white>" + page + "<#8cb8ff> of <white>" + totalPages);
-            sender.sendMessage(pagination);
+            sender.sendMessage(MiniMessage.miniMessage().deserialize("<#8cb8ff>Online Players (<white>" + MinecraftServer.getConnectionManager().getOnlinePlayers().size() + "<#8cb8ff> players, <white>" + totalPages + "<#8cb8ff> pages)"));
+            sender.sendMessage(MiniMessage.miniMessage().deserialize("<#8cb8ff>Page <white>" + page + "<#8cb8ff> of <white>" + totalPages));
 
             int count = 0;
             for (Player player : MinecraftServer.getConnectionManager().getOnlinePlayers()) {
