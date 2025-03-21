@@ -44,7 +44,7 @@ jobs:
       - name: Get Previous Release Commit
         id: get_prev_release
         run: |
-          PREV_COMMIT=$(gh api /repos/vansencool/InverseServer/git/ref/tags/ver-1.21.3 --jq '.object.sha' || echo "Failed to retrieve previous release commit")
+          PREV_COMMIT=$(gh api /repos/vansencool/InverseServer/git/ref/tags/ver/1.21.3 --jq '.object.sha' || echo "Failed to retrieve previous release commit")
           echo "prev_commit=${PREV_COMMIT}" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
