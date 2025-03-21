@@ -115,6 +115,11 @@ jobs:
           [ -n "$ENHANCEMENT" ] && OUTPUT="${OUTPUT}"$'\n\n'"### Improved things 🔨"$'\n'"${ENHANCEMENT}"
           [ -n "$BUG" ] && OUTPUT="${OUTPUT}"$'\n\n'"### Bug fixes 🐛"$'\n'"${BUG}"
           [ -n "$OTHER" ] && OUTPUT="${OUTPUT}"$'\n\n'"### Other Changes 🔄"$'\n'"${OTHER}"
+          
+          OUTPUT+=$'\n\n'"## Hash Checksums"
+          OUTPUT+=$'\n'"### SHA-512: $(sha512sum server.jar | cut -d' ' -f1)"
+          OUTPUT+=$'\n'"### SHA-256: $(sha256sum server.jar | cut -d' ' -f1)"
+          OUTPUT+=$'\n'"### MD5: $(md5sum server.jar | cut -d' ' -f1)"
 
           echo -e "$OUTPUT" > CHANGELOG.md
           echo "CHANGELOG<<EOF" >> $GITHUB_OUTPUT
@@ -125,9 +130,9 @@ jobs:
       - name: Delete previous release and tag if exists
         run: |
           set +e
-          gh release delete ver-1.21.3 --yes
-          git tag -d ver-1.21.3
-          git push --delete origin ver-1.21.3
+          gh release delete ver/1.21.3 --yes
+          git tag -d ver/1.21.3
+          git push --delete origin ver/1.21.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
