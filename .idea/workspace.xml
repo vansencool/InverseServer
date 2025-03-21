@@ -4,39 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="befd2894-f9d4-45b6-9b05-2bfb848930bb" name="Changes" comment="Javascript, along with a bit of fixes">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/JavascriptCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/bindings/ConsoleBinding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/sub/FileCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/sub/StringCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/config/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="befd2894-f9d4-45b6-9b05-2bfb848930bb" name="Changes" comment="remove print statements from javascript">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/chat/SwearList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/chat/SwearList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/disguise/DisguiseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/disguise/DisguiseCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/SkinCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/SkinCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/ResetSubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/ResetSubCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/SetSubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/SetSubCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/ThreadsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/ThreadsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/fly/FlyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/fly/FlyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/EntityEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/EntityEvents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/sub/PickupItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/sub/PickupItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/ItemDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/ItemDrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerBlockBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerBlockBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerPreLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerPreLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/server/ServerEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/server/ServerEvents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/generator/DesertGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/generator/DesertGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/permissions/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/permissions/Permissions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/tasks/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/tasks/Tasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/terminal/MinestomTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/terminal/MinestomTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/utils/notify/NotifyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/utils/notify/NotifyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/utils/skin/SkinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/utils/skin/SkinManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/sub/FileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/sub/FileCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +217,71 @@
       <option name="project" value="LOCAL" />
       <updated>1742546125317</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Javascript, along with a bit of fixes">
+      <option name="closed" value="true" />
+      <created>1742550812282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742550812282</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Correct tag">
+      <option name="closed" value="true" />
+      <created>1742551591266</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742551591266</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Correct tag (final)">
+      <option name="closed" value="true" />
+      <created>1742551690228</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742551690228</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Correct tag (final v2) and checksums">
+      <option name="closed" value="true" />
+      <created>1742552442536</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742552442536</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Better checksums">
+      <option name="closed" value="true" />
+      <created>1742552809836</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742552809836</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Better checksums (2)">
+      <option name="closed" value="true" />
+      <created>1742552933216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742552933216</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SHA 1 instead of SHA 512">
+      <option name="closed" value="true" />
+      <created>1742553290502</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742553290502</updated>
+    </task>
+    <task id="LOCAL-00011" summary="remove print statements from javascript">
+      <option name="closed" value="true" />
+      <created>1742568985524</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742568985524</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,9 +296,18 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Base with features" />
     <MESSAGE value="Bit changes and fixes" />
     <MESSAGE value="Custom brand name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Custom brand name" />
+    <MESSAGE value="Javascript, along with a bit of fixes" />
+    <MESSAGE value="Correct tag" />
+    <MESSAGE value="Correct tag (final)" />
+    <MESSAGE value="Correct tag (final v2) and checksums" />
+    <MESSAGE value="Better checksums" />
+    <MESSAGE value="Better checksums (2)" />
+    <MESSAGE value="SHA 1 instead of SHA 512" />
+    <MESSAGE value="remove print statements from javascript" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove print statements from javascript" />
   </component>
 </project>

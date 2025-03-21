@@ -10,7 +10,6 @@ import net.vansen.commands.admin.javascript.JavascriptCommand;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
 public class FileCommand extends Command {
 
@@ -33,6 +32,6 @@ public class FileCommand extends Command {
             } catch (IOException e) {
                 player.sendMessage(Component.text("Error! " + e.getMessage(), TextColor.fromHexString("#ff6183")));
             }
-            }, argument);
+        }, argument);
     }
 }

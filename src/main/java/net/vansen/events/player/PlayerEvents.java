@@ -27,7 +27,7 @@ public class PlayerEvents {
         eventNode.addListener(PlayerCommandEvent.class, PlayerCommand::run);
 
         eventNode.addListener(PlayerChatEvent.class, PlayerChat::run);
-        
+
         return eventNode;
     }
 }

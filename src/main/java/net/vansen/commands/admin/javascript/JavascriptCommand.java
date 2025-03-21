@@ -1,9 +1,7 @@
 package net.vansen.commands.admin.javascript;
 
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextColor;
-import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import net.minestom.server.command.builder.Command;
 import net.minestom.server.entity.Player;
 import net.vansen.commands.admin.javascript.bindings.ConsoleBinding;
@@ -54,12 +52,10 @@ public class JavascriptCommand extends Command {
             Object object = engine.eval(code);
             if (object == null) {
                 player.sendMessage(Component.text("No result from that.", TextColor.fromHexString("#958aff")));
-            }
-            else {
+            } else {
                 if (object instanceof Component component) {
                     player.sendMessage(component);
-                }
-                else {
+                } else {
                     player.sendMessage(Component.text("Result: (" + object.getClass().getPackage().getName() + "." + object.getClass().getSimpleName() + ") " + object, TextColor.fromHexString("#958aff")));
                 }
             }

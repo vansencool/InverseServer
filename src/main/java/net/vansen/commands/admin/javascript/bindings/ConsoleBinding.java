@@ -6,8 +6,8 @@ import org.slf4j.LoggerFactory;
 @SuppressWarnings("all")
 public class ConsoleBinding {
 
-    private final Logger logger = LoggerFactory.getLogger(ConsoleBinding.class);
     public static final ConsoleBinding INSTANCE = new ConsoleBinding();
+    private final Logger logger = LoggerFactory.getLogger(ConsoleBinding.class);
 
     public void log(Object message) {
         logger.info("By Javascript: {}", message.toString());
