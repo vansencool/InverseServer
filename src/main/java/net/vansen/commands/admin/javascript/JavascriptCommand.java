@@ -37,8 +37,6 @@ public class JavascriptCommand extends Command {
             if (Configuration.ALLOW_ANYONE_TO_USE_JAVASCRIPT) {
                 return Permissions.OP.has(sender);
             }
-            System.out.println(Configuration.PLAYERS_ALLOWED_TO_USE_JAVASCRIPT);
-            System.out.println(player.getUsername());
             return Permissions.OP.has(sender) && Configuration.PLAYERS_ALLOWED_TO_USE_JAVASCRIPT.contains(player.getUsername());
         }));
 
