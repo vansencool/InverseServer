@@ -134,7 +134,7 @@ jobs:
       - name: Release InverseServer
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ver-1.21.3
+          tag_name: ver/1.21.3
           name: "InverseServer 1.21.3"
           body: "${{ steps.generate_changelog.outputs.CHANGELOG }}"
           draft: false
