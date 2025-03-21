@@ -119,9 +119,9 @@ jobs:
           OUTPUT+=$'\n\n'"## Hash Checksums"
           OUTPUT+=$'\n'"| Algorithm | Checksum |"
           OUTPUT+=$'\n'"| --- | --- |"
-          OUTPUT+=$'\n'"| SHA-512 | `$(sha512sum server.jar | cut -d' ' -f1)` |"
-          OUTPUT+=$'\n'"| SHA-256 | `$(sha256sum server.jar | cut -d' ' -f1)` |"
-          OUTPUT+=$'\n'"| MD5 | `$(md5sum server.jar | cut -d' ' -f1)` |"
+          OUTPUT+=$'\n'"| SHA-512 | \`$(sha512sum server.jar | cut -d' ' -f1)\` |"
+          OUTPUT+=$'\n'"| SHA-256 | \`$(sha256sum server.jar | cut -d' ' -f1)\` |"
+          OUTPUT+=$'\n'"| MD5 | \`$(md5sum server.jar | cut -d' ' -f1)\` |"
 
           echo -e "$OUTPUT" > CHANGELOG.md
           echo "CHANGELOG<<EOF" >> $GITHUB_OUTPUT
