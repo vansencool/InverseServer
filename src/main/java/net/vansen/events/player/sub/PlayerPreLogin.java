@@ -1,9 +1,9 @@
 package net.vansen.events.player.sub;
 
-import net.minestom.server.event.player.*;
-import net.minestom.server.network.player.*;
+import net.minestom.server.event.player.AsyncPlayerPreLoginEvent;
+import net.minestom.server.network.player.GameProfile;
 
-import java.util.*;
+import java.util.UUID;
 
 public class PlayerPreLogin {
 

@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="befd2894-f9d4-45b6-9b05-2bfb848930bb" name="Changes" comment="" />
+    <list default="true" id="befd2894-f9d4-45b6-9b05-2bfb848930bb" name="Changes" comment="Javascript, along with a bit of fixes">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/JavascriptCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/bindings/ConsoleBinding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/sub/FileCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/admin/javascript/sub/StringCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vansen/config/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/chat/SwearList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/chat/SwearList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/disguise/DisguiseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/disguise/DisguiseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/SkinCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/SkinCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/ResetSubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/ResetSubCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/SetSubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/skin/sub/SetSubCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/ThreadsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/ThreadsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/fly/FlyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/commands/staff/utils/fly/FlyCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/EntityEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/EntityEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/sub/PickupItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/entity/sub/PickupItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/ItemDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/ItemDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerBlockBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerBlockBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerPreLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/player/sub/PlayerPreLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/events/server/ServerEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/events/server/ServerEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/generator/DesertGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/generator/DesertGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/permissions/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/permissions/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/tasks/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/tasks/Tasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/terminal/MinestomTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/terminal/MinestomTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/utils/notify/NotifyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/utils/notify/NotifyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vansen/utils/skin/SkinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vansen/utils/skin/SkinManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.conf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +82,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vansencool&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vansencool/InverseServer.git&quot;,
+    &quot;accountId&quot;: &quot;0c5f724e-94d4-45c2-aba9-aaa3bb35e117&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -99,7 +144,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="21 (5)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="net.vansen.Main" />
-      <module name="net.vansen.FirstServer.main" />
+      <module name="InverseServer.main" />
       <option name="PROGRAM_PARAMETERS" value="-Xms13312M -Xmx13312M -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=28 -XX:G1MaxNewSizePercent=50 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=15 -XX:G1MixedGCCountTarget=3 -XX:InitiatingHeapOccupancyPercent=20 -XX:G1MixedGCLiveThresholdPercent=90 -XX:SurvivorRatio=32 -XX:G1HeapWastePercent=5 -XX:MaxTenuringThreshold=1 -XX:+PerfDisableSharedMem -XX:G1SATBBufferEnqueueingThresholdPercent=30 -XX:G1ConcMarkStepDurationMillis=5 -XX:G1RSetUpdatingPauseTimePercent=0 -XX:+UseNUMA -XX:-DontCompileHugeMethods -XX:MaxNodeLimit=240000 -XX:NodeLimitFudgeFactor=8000 -XX:ReservedCodeCacheSize=400M -XX:NonNMethodCodeHeapSize=12M -XX:ProfiledCodeHeapSize=194M -XX:NonProfiledCodeHeapSize=194M -XX:NmethodSweepActivity=1 -XX:+UseFastUnorderedTimeStamps -XX:+UseCriticalJavaThreadPriority -XX:AllocatePrefetchStyle=3 -XX:+AlwaysActAsServerClassMachine -XX:+UseTransparentHugePages -XX:LargePageSizeInBytes=2M -XX:+UseLargePages -XX:+EagerJVMCI -XX:+UseStringDeduplication -XX:+UseAES -XX:+UseAESIntrinsics -XX:+UseFMA -XX:+UseLoopPredicate -XX:+RangeCheckElimination -XX:+OptimizeStringConcat -XX:+UseCompressedOops -XX:+UseThreadPriorities -XX:+OmitStackTraceInFastThrow -XX:+RewriteBytecodes -XX:+RewriteFrequentPairs -XX:+UseFPUForSpilling -XX:+UseFastStosb -XX:+UseNewLongLShift -XX:+UseVectorCmov -XX:+UseXMMForArrayCopy -XX:+UseXmmI2D -XX:+UseXmmI2F -XX:+UseXmmLoadAndClearUpper -XX:+UseXmmRegToRegMoveAll -XX:+EliminateLocks -XX:+DoEscapeAnalysis -XX:+AlignVector -XX:+OptimizeFill -XX:+EnableVectorSupport -XX:+UseCharacterCompareIntrinsics -XX:+UseCopySignIntrinsic -XX:+UseVectorStubs -XX:UseAVX=2 -XX:UseSSE=4 -XX:+UseFastJNIAccessors -XX:+UseInlineCaches -XX:+SegmentedCodeCache -Djdk.nio.maxCachedBufferSize=262144 -Dgraal.UsePriorityInlining=true -Dgraal.Vectorization=true -Dgraal.OptDuplication=true -Dgraal.DetectInvertedLoopsAsCounted=true -Dgraal.LoopInversion=true -Dgraal.VectorizeHashes=true -Dgraal.EnterprisePartialUnroll=true -Dgraal.VectorizeSIMD=true -Dgraal.StripMineNonCountedLoops=true -Dgraal.SpeculativeGuardMovement=true -Dgraal.TuneInlinerExploration=1 -Dgraal.LoopRotation=true -Dgraal.OptWriteMotion=true -Dgraal.CompilerConfiguration=enterprise" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,6 +222,31 @@
       <option name="presentableId" value="Default" />
       <updated>1723369523902</updated>
     </task>
+    <task id="LOCAL-00001" summary="Base with features">
+      <option name="closed" value="true" />
+      <created>1742408294413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742408294413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Bit changes and fixes">
+      <option name="closed" value="true" />
+      <created>1742411061335</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742411061335</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Custom brand name">
+      <option name="closed" value="true" />
+      <created>1742546125317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742546125317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,5 +259,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Base with features" />
+    <MESSAGE value="Bit changes and fixes" />
+    <MESSAGE value="Custom brand name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Custom brand name" />
   </component>
 </project>

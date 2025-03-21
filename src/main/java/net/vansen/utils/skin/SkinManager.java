@@ -1,13 +1,14 @@
 package net.vansen.utils.skin;
 
-import net.kyori.adventure.text.*;
-import net.kyori.adventure.text.format.*;
-import net.minestom.server.entity.*;
-import net.minestom.server.event.player.*;
-import net.vansen.noksdb.*;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
+import net.minestom.server.entity.Player;
+import net.minestom.server.entity.PlayerSkin;
+import net.minestom.server.event.player.PlayerSkinInitEvent;
+import net.vansen.noksdb.NoksDB;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.util.Map;
 
 public class SkinManager {
 

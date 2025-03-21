@@ -1,7 +1,7 @@
 package net.vansen.events.entity.sub;
 
-import net.minestom.server.entity.*;
-import net.minestom.server.event.item.*;
+import net.minestom.server.entity.Player;
+import net.minestom.server.event.item.PickupItemEvent;
 
 public class PickupItem {
 

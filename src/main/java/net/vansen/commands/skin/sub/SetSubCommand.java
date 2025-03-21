@@ -1,11 +1,12 @@
 package net.vansen.commands.skin.sub;
 
-import net.kyori.adventure.text.*;
-import net.kyori.adventure.text.format.*;
-import net.minestom.server.command.builder.*;
-import net.minestom.server.command.builder.arguments.*;
-import net.minestom.server.entity.*;
-import net.vansen.utils.skin.*;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.format.TextColor;
+import net.minestom.server.command.builder.Command;
+import net.minestom.server.command.builder.arguments.ArgumentType;
+import net.minestom.server.entity.Player;
+import net.vansen.utils.skin.SkinManager;
 
 public class SetSubCommand extends Command {
 

@@ -1,6 +1,7 @@
 package net.vansen.commands;
 
 import net.minestom.server.command.builder.Command;
+import net.vansen.commands.admin.javascript.JavascriptCommand;
 import net.vansen.commands.disguise.DisguiseCommand;
 import net.vansen.commands.skin.SkinCommand;
 import net.vansen.commands.staff.utils.*;
@@ -106,7 +107,7 @@ public enum Commands {
      * Changes the flying speed for players.
      */
     FLYING_SPEED(new FlyingSpeedCommand()),
-    
+
     /**
      * Monitor command.
      * <p>
@@ -140,7 +141,12 @@ public enum Commands {
      * <p>
      * Disguises players as other entities.
      */
-    DISGUISE(new DisguiseCommand());
+    DISGUISE(new DisguiseCommand()),
+
+    /**
+     * Admin command for running javascript code on the server, IT IS VERY DANGEROUS TO LET ANYONE USE THIS
+     */
+    JAVASCRIPT(new JavascriptCommand());
 
     public final Command command;
 

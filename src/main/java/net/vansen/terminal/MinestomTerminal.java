@@ -17,8 +17,8 @@ import java.util.List;
 
 public class MinestomTerminal {
     private static final String PROMPT = "> ";
-    private static volatile Terminal terminal;
     static volatile LineReader reader;
+    private static volatile Terminal terminal;
     private static volatile boolean running = false;
 
     @ApiStatus.Internal

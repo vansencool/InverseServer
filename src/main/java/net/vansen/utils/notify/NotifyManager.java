@@ -1,12 +1,12 @@
 package net.vansen.utils.notify;
 
-import net.kyori.adventure.text.*;
-import net.minestom.server.*;
-import net.minestom.server.entity.*;
-import net.vansen.noksdb.*;
+import net.kyori.adventure.text.Component;
+import net.minestom.server.MinecraftServer;
+import net.minestom.server.entity.Player;
+import net.vansen.noksdb.NoksDB;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.util.Map;
 
 public class NotifyManager {
 

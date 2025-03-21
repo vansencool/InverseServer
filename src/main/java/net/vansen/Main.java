@@ -13,9 +13,9 @@ import net.hollowcube.polar.PolarWorld;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.event.GlobalEventHandler;
 import net.minestom.server.instance.InstanceContainer;
-import net.minestom.server.instance.InstanceManager;
 import net.minestom.server.world.DimensionType;
 import net.vansen.basic.CommandsRegistrar;
+import net.vansen.config.Configuration;
 import net.vansen.events.entity.EntityEvents;
 import net.vansen.events.player.PlayerEvents;
 import net.vansen.events.server.ServerEvents;
@@ -37,20 +37,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         MinecraftServer minecraftServer = MinecraftServer.init();
 
-        InstanceManager instanceManager = MinecraftServer.getInstanceManager();
-        InstanceContainer instanceContainer = instanceManager.createInstanceContainer(MinecraftServer.getDimensionTypeRegistry().register(
+        InstanceContainer instanceContainer = MinecraftServer.getInstanceManager().createInstanceContainer(MinecraftServer.getDimensionTypeRegistry().register(
                 "completely_an_original_dimension_name", DimensionType.builder().ambientLight(2f).build()
         ));
         Variables.instanceContainer = instanceContainer;
-
-        MinecraftServer.getSchedulerManager().buildShutdownTask(() -> {
-            try {
-                instanceContainer.saveInstance();
-                instanceContainer.saveChunksToStorage();
-            } catch (Throwable e) {
-                e.printStackTrace();
-            }
-        });
         instanceContainer.setGenerator(new DesertGenerator());
         Path worldPath = Path.of("world/world.polar");
         if (!Files.exists(worldPath)) {
@@ -79,7 +69,6 @@ public class Main {
                 .permissionSuggestions()
                 .dependencyManager(true)
                 .enable();
-        MinecraftServer.setBrandName("Protected by OmniGuard (Very Fancy-Sounding Security Team)");
 
         Path target = Path.of("config.conf");
         InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("config.conf");
@@ -91,8 +80,12 @@ public class Main {
         FursConfig config = FursConfig.createAndParseFile(target);
         int port = config.getInt("server.port");
         String ip = config.getString("server.ip");
-        LoggerFactory.getLogger("Main").info("Starting server on port: {}, at ip: {}", port, ip);
+        String name = config.getString("server.name");
+        LoggerFactory.getLogger("Main").info("Starting {} on port: {}, at ip: {}", name, port, ip);
+        MinecraftServer.setBrandName(name);
         minecraftServer.start(ip, config.getInt("server.port"));
         MinestomTerminal.start();
+        Configuration.ALLOW_ANYONE_TO_USE_JAVASCRIPT = config.getBoolean("special_operator.javascript.allow_anybody_to_use_javascript");
+        Configuration.PLAYERS_ALLOWED_TO_USE_JAVASCRIPT = config.getList("special_operator.javascript.players_that_can_execute", String.class);
     }
 }

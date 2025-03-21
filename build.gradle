@@ -26,7 +26,9 @@ dependencies {
     implementation 'com.github.Articdive:JNoise:3.0.2'
     implementation 'org.jline:jline-reader:3.29.0'
     implementation 'org.jline:jline-terminal:3.29.0'
-    implementation 'com.github.vansencool:FursConfig:1.0.1'
+    implementation 'com.github.vansencool:FursConfig:1.0.2'
+    // Nashorn for the /javascript command
+    implementation 'org.openjdk.nashorn:nashorn-core:15.6'
 }
 
 jar {

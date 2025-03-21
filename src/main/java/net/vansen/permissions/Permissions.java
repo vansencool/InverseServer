@@ -25,16 +25,44 @@ public enum Permissions {
      */
     TELEPORT("staff.utils.teleport"),
 
+    /**
+     * Disguise command
+     */
+    DISGUISE("staff.utils.disguise"),
+
+    /**
+     * Spark command
+     */
     SPARK("staff.utils.spark"),
 
+    /**
+     * Fly command
+     */
     FLY("staff.utils.fly"),
 
+    /**
+     * Teleporting players randomly command
+     */
     RANDOM_TELEPORT("staff.utils.randomteleport"),
 
+    /**
+     * Gamemode commands
+     */
     GAMEMODE("staff.utils.gamemode"),
 
+    /**
+     * World list command
+     */
     WORLDS("staff.utils.worlds"),
 
+    /**
+     * Threads command
+     */
+    THREADS("staff.utils.threads"),
+
+    /**
+     * Chat bypass, can bypass swear check and links etc
+     */
     CHAT_BYPASS("server.chatbypass");
 
     private final String permission;

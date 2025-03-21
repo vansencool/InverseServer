@@ -1,8 +1,9 @@
 package net.vansen.events.entity;
 
-import net.minestom.server.event.*;
-import net.minestom.server.event.item.*;
-import net.vansen.events.entity.sub.*;
+import net.minestom.server.event.EventFilter;
+import net.minestom.server.event.EventNode;
+import net.minestom.server.event.item.PickupItemEvent;
+import net.vansen.events.entity.sub.PickupItem;
 
 public class EntityEvents {
 

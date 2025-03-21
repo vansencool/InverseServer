@@ -1,8 +1,8 @@
 package net.vansen.events.server;
 
-import net.minestom.server.event.*;
-import net.minestom.server.event.server.*;
-import net.vansen.events.server.sub.*;
+import net.minestom.server.event.EventNode;
+import net.minestom.server.event.server.ServerListPingEvent;
+import net.vansen.events.server.sub.ServerListPing;
 
 public class ServerEvents {
 

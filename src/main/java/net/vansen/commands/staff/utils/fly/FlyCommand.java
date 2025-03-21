@@ -20,6 +20,7 @@ public class FlyCommand extends Command {
                 return;
             }
             player.setFlying(!player.isFlying());
+            player.setAllowFlying(player.isFlying());
             player.sendActionBar(Component.text("You are now " + (player.isFlying() ? "flying" : "not flying") + "!", TextColor.fromHexString("#958aff")));
         });
 
@@ -31,6 +32,7 @@ public class FlyCommand extends Command {
                 return;
             }
             player.setFlying(context.get(booleanArg));
+            player.setAllowFlying(context.get(booleanArg));
             player.sendActionBar(Component.text("You are now " + (player.isFlying() ? "flying" : "not flying") + "!", TextColor.fromHexString("#958aff")));
         }, booleanArg);
     }

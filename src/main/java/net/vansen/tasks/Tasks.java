@@ -18,6 +18,14 @@ public class Tasks {
             NotifyManager.notifyPlayers(Component.text("Saving chunks!").color(NamedTextColor.GREEN));
             return TaskSchedule.seconds(3);
         });
+        MinecraftServer.getSchedulerManager().buildShutdownTask(() -> {
+            try {
+                Variables.instanceContainer.saveInstance();
+                Variables.instanceContainer.saveChunksToStorage();
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     @SuppressWarnings("all")

@@ -1,13 +1,14 @@
 package net.vansen.generator;
 
-import de.articdive.jnoise.*;
-import net.minestom.server.coordinate.*;
-import net.minestom.server.instance.block.*;
-import net.minestom.server.instance.generator.*;
-import net.minestom.server.world.biome.*;
-import org.jetbrains.annotations.*;
+import de.articdive.jnoise.JNoise;
+import net.minestom.server.coordinate.Point;
+import net.minestom.server.instance.block.Block;
+import net.minestom.server.instance.generator.GenerationUnit;
+import net.minestom.server.instance.generator.Generator;
+import net.minestom.server.world.biome.Biome;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.concurrent.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class DesertGenerator implements Generator {
     private static final int SEA_LEVEL = 64;
@@ -17,7 +18,7 @@ public class DesertGenerator implements Generator {
 
     private final JNoise terrainNoise = JNoise.newBuilder()
             .perlin()
-            .setFrequency(1.0 / 512.0)
+            .setFrequency(1.0 / 256.0)
             .setSeed(System.currentTimeMillis() + 50000)
             .build();
 
